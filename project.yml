@@ -1,0 +1,8 @@
+packages:
+  - name: mypackage
+    actions:
+      - name: hello
+        # Changes to the runtime also require changes in build.sh
+        runtime: 'python:3.9'
+        environment:
+          XLWINGS_LICENSE_KEY: "${XLWINGS_LICENSE_KEY}"
